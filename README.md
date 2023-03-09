@@ -24,12 +24,19 @@ A few examples (in `cpp` files) are provided in the `example` folder. They demos
 
 ### Performance Test
   ```
+  git checkout performance_test
   make clean
   make test
+  cd ./bin
+  ./test <int:number of threads>
+  
+  for automated test run for 1,2,4,8,16 threads (each with 5 times execution)
+  
   cd example
   bash performancetest.bash >> out.txt 
   
   or (for full verbose) use:
+  
   bash performancetest.bash |& tee -a  out.txt  
   ```
 ### Build
