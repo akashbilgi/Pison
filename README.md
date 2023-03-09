@@ -26,11 +26,11 @@ A few examples (in `cpp` files) are provided in the `example` folder. They demos
   ```
   make clean
   make test
-  cd exmaple
+  cd example
   bash performancetest.bash >> out.txt 
-  or
+  
+  or (for full verbose) use:
   bash performancetest.bash |& tee -a  out.txt  
-  (for full verbose)
   ```
 ### Build
   ```
