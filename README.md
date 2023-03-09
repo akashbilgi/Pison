@@ -22,12 +22,16 @@ Four sample datasets are included in `dataset` folder. Large datasets (used in p
 ### Examples
 A few examples (in `cpp` files) are provided in the `example` folder. They demostrate how to use our APIs to implement JSON queries. To create and test your examples, please update the `makefile` accordingly.
 
-### Test Build
+### Performance Test
   ```
   make clean
   make test
+  cd exmaple
+  bash performancetest.bash >> out.txt 
+  or
+  bash performancetest.bash |& tee -a  out.txt  
+  (for full verbose)
   ```
-
 ### Build
   ```
   make clean
